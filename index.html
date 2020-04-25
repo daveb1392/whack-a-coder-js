@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Whack A Coder!!!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Changa+One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <audio src="/audio/jab.wav"></audio>
+  </head>
+  <body>
+    <h1>Whack-a-Coder</h1>
+    <!-- <div class="start-screen"> -->
+    <div class="splash-screen">
+      <div style="text-align:center;">
+        <!-- <button id="button">Start</button> -->
+      </div>
+    </div>
+    <!-- <div class="show-score"></div> 
+    </div> -->
+
+    <div class="start-screen">
+      <div class="splash-screen">
+        <div style="text-align:center">
+          <div class="start-screen-title">Welcome to Whack-a-coder!</div>
+          <div class="splash-screen-text">
+            <p>It's time to test your wits and whack some coders!</p>
+            <br />
+            <p>
+              You start with 5 seconds on the clock, for every coder you whack,
+              you gain a second.
+            </p>
+            <br />
+            <p>
+              The aim of the game is to be in play for as long as possible. Once
+              the countdown hits zero the game is over your total time will be
+              logged on the leaderboard!
+            </p>
+            <br />
+            <p>Happy Whackin'</p>
+          </div>
+          <form id="usernameForm">
+            <br />
+            <input
+              id="username"
+              type="text"
+              name="username"
+              value="Enter your username"
+            /><br />
+            <input id="button" type="submit" value="Start" />
+          </form>
+          <!-- <div class="show-score"></div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="score-block">
+      <!-- <span class="score">0</span> -->
+
+      <div><span id="time">8</span> seconds left!</div>
+      <div id="leaderboard">HIGHSCORES:</div>
+    </div>
+
+    <div class="game">
+      <div class="desk desk1">
+        <div
+          style="background: url(imgs/mani.svg) bottom center no-repeat"
+          class="coder"
+        ></div>
+      </div>
+      <div class="desk desk2">
+        <div
+          style="background: url(imgs/serg.svg) bottom center no-repeat"
+          class="coder"
+        ></div>
+      </div>
+      <div class="desk desk3">
+        <div
+          style="background: url(imgs/le.svg) bottom center no-repeat"
+          class="coder"
+        ></div>
+      </div>
+      <div class="desk desk4">
+        <div
+          style="background: url(imgs/adnan.svg) bottom center no-repeat"
+          class="coder"
+        ></div>
+      </div>
+      <div class="desk desk5">
+        <div
+          style="background: url(imgs/dan.svg) bottom center no-repeat"
+          class="coder"
+        ></div>
+      </div>
+      <div class="desk desk6">
+        <div
+          style="background: url(imgs/danielle.svg) bottom center no-repeat"
+          class="coder"
+        ></div>
+      </div>
+    </div>
+
+    <table id="score-board"></table>
+
+    <script defer src="js/app.js"></script>
+  </body>
+</html>
